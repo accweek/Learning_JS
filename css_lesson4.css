@@ -1,0 +1,46 @@
+/*правило для всех картинки*/
+img {
+    width: 200px;
+    border: lightgray 1px solid;
+    padding: 5px;
+}
+
+.top_name {
+    font-size: 25px;
+}
+
+.top_description {
+    font-size: 23px;
+}
+
+/*правило для данного класса*/
+.list {
+    color: black;
+    font-size: 15px;
+    border: gray 2px solid;
+    margin-left: 15px;
+    margin-right: 85%;
+    padding: 5px;
+}
+
+.important_size {
+    font-size: 30px;
+}
+
+.important_words {
+    color: black;
+    font-size: 25px;
+    border: darkgray 2px solid;
+    padding: 5px;
+}
+
+input {
+    font-size: 18px;
+    padding: 5px;
+}
+
+textarea {
+    height: 40px;
+    font-size: 18px;
+    padding: 5px;
+}
