@@ -1,0 +1,54 @@
+/* Homework getElementById */
+
+
+<h1 class='mainText'>Пользователь, настройки</h1>
+<p>
+    <input value='Pavel' type='text' id='userNameId'>
+</p>
+<p>
+    <input value='Loginov' type='text' id='userLastNameId'>
+</p>
+<p>
+    <input value='88008008080' type='text' id='userNumberPhoneId'>
+</p>
+<p>
+    <select name='City' id='userCityId'>
+        <option>Minsk</option>
+        <option selected= 'selected'>Kiev</option>
+        <option>Moscow</option>
+    </select>
+</p>
+<p>
+    <textarea id= 'userInfoId'>не много о себе: я ... </textarea>
+</p>
+
+<div id="userAvatarId"><img id="avatarId" src="D:\Логинов П.В\Документация\Другое\image001.png" alt='AvatarNotFound'></div>
+
+<link rel='stylesheet' href='Homework1_Lesson7.css'>
+
+<script>
+    var userName;
+    var userLastName;
+    var userNumberPhone;
+    var userCity;
+    var userInfo;
+    var userAvatar;
+    var avatar;
+
+    userName = document.getElementById('userNameId');
+    userLastName = document.getElementById('userLastNameId');
+    userNumberPhone = document.getElementById('userNumberPhoneId');
+    userCity = document.getElementById('userCityId');
+    userInfo = document.getElementById('userInfoId');
+    userAvatar = document.getElementById('userAvatarId');
+    avatar = document.getElementById('avatarId');
+    
+    /*window.alert(userName.value);
+    window.alert(userLastName.value);
+    window.alert(userNumberPhone.value);
+    window.alert(userCity.value);
+    window.alert(userInfo.value);
+    window.alert(userAvatar.innerHTML);*/
+    window.alert(avatar.alt);
+
+</script>
