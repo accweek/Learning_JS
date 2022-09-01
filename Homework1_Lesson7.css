@@ -1,0 +1,19 @@
+.mainText 
+{
+    text-align: center;
+    font-size: 25px;
+    padding: 5px;
+
+}
+
+input 
+{
+    font-size: 15px;
+    padding: 5px;
+}
+
+select 
+{
+    font-size: 15px;
+    padding: 5px;
+}
