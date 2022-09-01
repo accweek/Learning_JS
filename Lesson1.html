@@ -1,0 +1,9 @@
+/* Прога для ввода сообщения в поле ввода, ивывод этого сообщения через всплывающее окно с подтверждением действий*/
+
+<input id='message' />
+<script>
+	setInterval(function(){
+		var messageInput = document.getElementById('message');
+		window.alert(messageInput.value);
+	}, 4000);
+</script>
