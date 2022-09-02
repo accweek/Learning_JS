@@ -1,49 +1,45 @@
-var userName;
-var userLastName;
-var userNumberPhone;
-var userCity;
-var userInfo;
-var userAvatar;
-var avatar;
 
-function alertValue(El){
-    console.log(El.value);
-    console.log(El.className);
+
+function addErrorClass(elementId) {
+    var element = document.getElementById(elementId);
+    element.className = 'error-input';
 }
 
-function getEl(id){
-    var el = document.getElementById(id);
-    return el;
+function addDefaultClass(elementId){
+    var element = document.getElementById(elementId);
+    element.className = 'default-input';
 }
 
-userName = getEl('userNameId');
-alertValue(userName);
-userLastName = getEl('userLastNameId');
-alertValue(userLastName);
-userNumberPhone = getEl('userNumberPhoneId');
-alertValue(userNumberPhone);
-userCity = getEl('userCityId');
-alertValue(userCity);
-userInfo = getEl('userInfoId');
-alertValue(userInfo);
-userAvatar = getEl('userAvatarId');
-alertValue(userAvatar);
-avatar = getEl('avatarId');
-alertValue(avatar);
+function addErrorClassAllInputs() {
+    addErrorClass('first-name');
+    addErrorClass('last-name');
+    addErrorClass('address');
+}
 
-/*
-userName.setAttribute('value', 'Ivan') ;
-userLastName.setAttribute('value', 'Neloginov');
-userCity.setAttribute('select','Moscow');
-userInfo.setAttribute('value','Не знаю что сюда писать...');
+function addDefaultClassAllInputs(){
+    addDefaultClass('first-name');
+    addDefaultClass('last-name');
+    addDefaultClass('address');
+}
+
+function changedInput(elementId){
+    var element = document.getElementById(elementId);
+    console.log(element.value);
+    //element.value = null;
+    //element.setAttribute('value', '1');
+}
+
+function changedAllInput(){
+    changedInput('first-name');
+    changedInput('last-name');
+    changedInput('address');
+}
+
+//window.setTimeout(addErrorClassAllInputs, 2000); //Таймаут на 2000мс после чего будет вызвана эта функция 
+
+var sendButton = document.getElementById('send-button');
+sendButton.addEventListener('mouseover', addErrorClassAllInputs);
+sendButton.addEventListener('mouseout', addDefaultClassAllInputs);
+sendButton.addEventListener('click', changedAllInput);
 
 
-userLastName.value = "Neloginov";
-
-userLastName.className = "default-input error-input";
-
-avatar.src = "https://cs14.pikabu.ru/post_img/2022/06/23/6/1655975229170327950.png";
-
-userAvatar.title = "hehehe";
-
-userAvatar.innerHTML = "asdqwe";*/
