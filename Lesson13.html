@@ -1,31 +1,16 @@
-/* возвращаемое значение*/
-
-
-<h1 class='mainText'>Пользователь, настройки</h1>
-<p>
-    <input value='Pavel' type='text' id='userNameId' class="default-input">
-</p>
-<p>
-    <input value='Loginov' type='text' id='userLastNameId' class="default-input">
-</p>
-<p>
-    <input value='88008008080' type='text' id='userNumberPhoneId' class="default-input">
-</p>
-<p>
-    <select name='City' id='userCityId' class="default-input">
-        <option>Minsk</option>
-        <option selected= 'selected'>Kiev</option>
-        <option>Moscow</option>
-    </select>
-</p>
-<p>
-    <textarea id= 'userInfoId' class="defaulte-textarea">не много о себе: я ... </textarea>
-</p>
-
-<div id="userAvatarId"><img id="avatarId" src="D:\Логинов П.В\Документация\Другое\image001.png" alt='AvatarNotFound'></div>
+<div>
+    <input value="" title="Enter your name" id="first-name" class="default-input" placeholder="? Name ?">
+</div>
+<div>
+    <input value="" title="Enter your lastname" id="last-name" class="default-input" placeholder="? Lastname ?">
+</div>
+<div>
+    <input value="" title="Enter your city" id="address" class="default-input" placeholder="? Address ?">
+</div>
+<div>
+     <!--<button id="send-button" onmousemove="addErrorClassAllInputs()" onmouseout="addDefaultClassAllInput()">Send</button> -->
+     <button id="send-button">Send</button>
+</div>
 
 <script src="les13.js"></script>
 <link rel="stylesheet" href="les13.css">
-
-<!--<script src="les11.js"></script>
-<link rel="stylesheet" href="les11.css" type="text/css">
