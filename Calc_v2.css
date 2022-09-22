@@ -1,0 +1,25 @@
+.js_calc {
+    width: 500px;
+    background-color: aliceblue;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.js_calc .operations_block button {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    font-size: 20px;
+}
+
+.js_calc .inputs_block .input_block{
+    display: inline-block;
+    padding: 10px;
+}
+
+.js_calc .inputs_block .input_block label{
+    display: block;
+    margin-bottom: 10px;
+}
