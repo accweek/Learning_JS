@@ -1,0 +1,10 @@
+.js-mySlider {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.js-mySlider .slide-img {
+    max-width: 20%;
+    max-height: 20%;
+}
