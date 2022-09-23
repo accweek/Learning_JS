@@ -1,3 +1,9 @@
+car1.engine.v = 23;
+window.alert(car1.isTurnOn);
+car1.start();
+window.alert(car1.isTurnOn);
+
+
 //find elements
 var showPrevBtn = document.getElementById('show-prev-btn');
 var showNextBtn = document.getElementById('show-next-btn');
